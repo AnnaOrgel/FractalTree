@@ -1,17 +1,17 @@
 private double fractionLength = .86; 
-private int smallestBranch = 19; 
-private double branchAngle = .2;  
+private int smallestBranch = 23; 
+private double branchAngle = .22;  
 public void setup() 
 {   
   size(1000,1000);    
-	noLoop(); 
+	//noLoop(); 
 } 
 public void draw() 
 {   
 	background(0);   
 	stroke(0,255,0);   
 	line(350,1000,350,800);   
-	drawBranches(350, 800, 150, 3*Math.PI/2);  //will add later 
+	drawBranches(350, 800, 150-mouseY*0.17, 3*Math.PI/2);  
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
